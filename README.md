@@ -11,7 +11,43 @@
 
 * [SLCPython June 2024 Talk Slides](https://docs.google.com/presentation/d/1qnd0CGMzitNVrYsqYVVvXuyx4C-DqjQuH3G07QQqmzA/edit?usp=sharing)
 
-### Reference Links
+### Figures
+
+#### TileDB example schema
+
+```mermaid
+erDiagram
+    TEMPERATURE_DATA {
+        int64 timestamp
+        float64 latitude
+        float64 longitude
+        float64 altitude
+        float32 temperature
+    }
+```
+
+#### DuckDB example schema
+
+```mermaid
+erDiagram
+    TEMPERATURE_DATA {
+        int64 timestamp
+        float64 latitude
+        float64 longitude
+        float64 altitude
+        float32 temperature
+        int64 location_id
+    }
+    LOCATION_METADATA {
+        int64 location_id
+        float64 latitude
+        float64 longitude
+        string city
+    }
+    TEMPERATURE_DATA ||--|| LOCATION_METADATA: "has"
+```
+
+### Links
 
 * [🤓 This Repo](https://github/octaflop/ducktiles.git) : Clone this and follow along
 * [🐼 Pandas](https://pandas.pydata.org/) : Consider throwing at your next spreadsheet
