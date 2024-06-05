@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "ducktiles"
+version = "0.1.0"
+description = ""
+authors = ["Faris Chebib <faris@theluckybead.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+tiledb = "^0.29.0"
+duckdb = "^1.0.0"
+tiledb-plot-widget = "^1.1.0"
+jupyter = "^1.0.0"
+numpy = "^1.26.4"
+pandas = "^2.2.2"
+matplotlib = "^3.9.0"
+nicegui = "^1.4.26"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
