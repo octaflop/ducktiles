@@ -1,6 +1,9 @@
 .venv
 venv
 
+*.tdb
+temperature_data/
+
 
 ### Python template
 # Byte-compiled / optimized / DLL files

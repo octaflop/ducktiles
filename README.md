@@ -5,7 +5,7 @@
 0. [Install Poetry](https://python-poetry.org/docs/#installation)
 1. Clone this repo `git clone https://github/octaflop/ducktiles.git`
 2. `poetry install`
-3. `poetry run jupyter introduction.ipynb`
+3. `poetry run jupyter notebook introduction.ipynb`
 
 ## Slides and References
 
